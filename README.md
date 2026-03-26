@@ -1,22 +1,17 @@
 # 客戶啟動儀表板
 
-高端互動式客戶項目提案儀表板。基於 Next.js、Tailwind CSS v4、Framer Motion 構建。
+高端互動式客戶項目提案儀表板，可以直接在銷售通話中做 Pitch 時輔助使用。
+
+基於 Next.js、Tailwind CSS v4、Framer Motion 構建。
 
 暗色沉浸式設計，內建網格紋理、轉角邊框、3D 傾斜卡片、視差圖片、動態計數器、滾動觸發動畫。
 
 ## 快速開始
 
-### 1. 克隆項目
-
-```bash
-git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
-cd my-client-dashboard
-```
-
-### 2. 打開 Claude Code，貼上這段 prompt：
+### 1. 打開 Claude Code，貼上這段 prompt：
 
 ```
-克隆客戶啟動儀表板模板，並為我的業務進行客製化。
+clone this 客戶啟動儀表板模板，並為我的事業進行客製化。
 
 git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
 
@@ -34,45 +29,4 @@ git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
 全部回答完後，生成客製化的 src/lib/project-data.ts 文件，並更新 src/app/globals.css 的品牌色。然後告訴我怎麼啟動。
 ```
 
-Claude 會自動引導你完成 9 個步驟的問答，生成你的專屬儀表板。
-
-### 3. 預覽
-
-```bash
-npm install
-npm run dev
-```
-
-打開 http://localhost:3000
-
-## 自定義
-
-所有內容集中在 **兩個文件**：
-
-| 文件 | 修改內容 |
-|------|---------|
-| `src/lib/project-data.ts` | 所有文字、定價、時間線、交付物、圖片 |
-| `src/app/globals.css` | 品牌色（第 8-9 行：`--color-accent`） |
-
-不要修改組件文件，除非你想改變設計本身。
-
-## 部署
-
-推送到 GitHub 並連接 Vercel，或：
-
-```bash
-npx vercel
-```
-
-在 Vercel 設置中添加自定義域名，例如 `proposal.yourstudio.com`。
-
-## 技術棧
-
-- Next.js (App Router)
-- Tailwind CSS v4
-- Framer Motion
-- TypeScript
-
-## Credit
-
-Original template by [@bywaviboy](https://instagram.com/bywaviboy).
+剩下的 Claude 會自動引導你完成 9 個步驟的問答，生成你的專屬儀表板。
