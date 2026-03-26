@@ -16,22 +16,22 @@ cd my-client-dashboard
 ### 2. 打開 Claude Code，貼上這段 prompt：
 
 ```
-Clone the client onboarding dashboard template and customize it for my business.
+克隆客戶啟動儀表板模板，並為我的業務進行客製化。
 
 git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
 
-Now walk me through setting it up. Ask me questions one section at a time about:
-1. My studio/brand (name, title, email, accent color, logo)
-2. My client (name, contact person, industry)
-3. The project (name, type, tagline, summary, objectives, duration)
-4. Timeline phases (phase names, dates, tasks)
-5. Deliverables (categories and items with quantities)
-6. Scope (what's included and excluded)
-7. Pricing (line items, discounts, payment schedule, payment link)
-8. Images (suggest Unsplash images based on the client's industry)
-9. Next steps and CTA
+現在引導我完成設置。一次問我一個部分：
+1. 我的工作室/品牌（名稱、頭銜、郵箱、品牌色、Logo）
+2. 我的客戶（名稱、聯絡人、行業）
+3. 項目資訊（名稱、類型、標語、摘要、目標、時長）
+4. 時間線階段（階段名稱、日期、任務）
+5. 交付物（類別與項目數量）
+6. 服務範圍（包含與不包含的項目）
+7. 定價（明細、折扣、付款方式、付款鏈接）
+8. 圖片（根據客戶行業建議 Unsplash 圖片）
+9. 下一步與 CTA
 
-After I answer everything, generate a customized src/lib/project-data.ts file with all my answers, and update the accent color in src/app/globals.css. Then tell me how to run it.
+全部回答完後，生成客製化的 src/lib/project-data.ts 文件，並更新 src/app/globals.css 的品牌色。然後告訴我怎麼啟動。
 ```
 
 Claude 會自動引導你完成 9 個步驟的問答，生成你的專屬儀表板。
