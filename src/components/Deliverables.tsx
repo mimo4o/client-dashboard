@@ -16,16 +16,16 @@ export function Deliverables() {
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="03" label="Deliverables" />
+          <SectionLabel number="03" label="交付物" />
         </ScrollReveal>
 
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-28">
           <ScrollReveal delay={0.1} variant="slideRight" className="lg:col-span-5 flex flex-col justify-center">
             <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
-              What You Get
+              你會得到什麼
             </h2>
             <p className="text-[16px] text-text-secondary leading-[1.8] tracking-[-0.01em]">
-              Every asset crafted at production quality, delivered in formats ready for immediate deployment.
+              每一項交付物都經過精心打造，確保即時可用、直接上線。
             </p>
           </ScrollReveal>
 
@@ -231,7 +231,7 @@ export function Deliverables() {
             <div className="text-[56px] font-bold text-accent tracking-[-0.03em] mb-2">
               <AnimatedCounter value={34} suffix="+" duration={2} />
             </div>
-            <div className="text-[11px] text-text-muted font-mono tracking-[0.2em] uppercase">Total deliverables</div>
+            <div className="text-[11px] text-text-muted font-mono tracking-[0.2em] uppercase">總交付項目</div>
           </div>
         </ScrollReveal>
       </div>

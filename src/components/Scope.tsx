@@ -12,15 +12,15 @@ export function Scope() {
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="04" label="Scope" />
+          <SectionLabel number="04" label="服務範圍" />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
           <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
-            Scope of Work
+            服務範圍
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
-            Clear boundaries to ensure maximum value within the project parameters.
+            明確的邊界，確保在項目範圍內為你創造最大價值。
           </p>
         </ScrollReveal>
 
@@ -30,7 +30,7 @@ export function Scope() {
               <div className="card frame bg-bg-card rounded-2xl p-10 h-full hover:bg-bg-card-hover transition-all duration-500">
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-2 h-2 rounded-full bg-success" />
-                  <h3 className="text-[16px] font-semibold tracking-[-0.01em]">Included</h3>
+                  <h3 className="text-[16px] font-semibold tracking-[-0.01em]">包含項目</h3>
                 </div>
 
                 <StaggerContainer className="space-y-5" staggerDelay={0.04}>
@@ -54,7 +54,7 @@ export function Scope() {
               <div className="card frame bg-bg-card rounded-2xl p-10 h-full hover:bg-bg-card-hover transition-all duration-500">
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-2 h-2 rounded-full bg-text-muted/30" />
-                  <h3 className="text-[16px] font-semibold text-text-muted tracking-[-0.01em]">Not Included</h3>
+                  <h3 className="text-[16px] font-semibold text-text-muted tracking-[-0.01em]">不包含項目</h3>
                 </div>
 
                 <StaggerContainer className="space-y-5" staggerDelay={0.04}>
@@ -71,7 +71,7 @@ export function Scope() {
                 </StaggerContainer>
 
                 <p className="text-[12px] text-text-muted/40 mt-10 leading-[1.6]">
-                  Additional services can be scoped and quoted separately.
+                  額外服務可另行報價。
                 </p>
               </div>
             </TiltCard>

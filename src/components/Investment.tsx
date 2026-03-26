@@ -8,7 +8,7 @@ import { TiltCard } from "./TiltCard";
 import { AnimatedCurrency } from "./AnimatedCounter";
 
 function formatCurrency(amount: number) {
-  return new Intl.NumberFormat("en-GB", {
+  return new Intl.NumberFormat("zh-TW", {
     style: "currency",
     currency: PROJECT.quote.currency,
     minimumFractionDigits: 0,
@@ -25,15 +25,15 @@ export function Investment() {
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="05" label="Investment" />
+          <SectionLabel number="05" label="投資方案" />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
           <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
-            Project Investment
+            投資方案
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
-            Transparent pricing with milestone-based payments aligned to delivery.
+            透明定價，依里程碑分階段付款。
           </p>
         </ScrollReveal>
 
@@ -44,7 +44,7 @@ export function Investment() {
               <div className="card frame bg-bg-card rounded-2xl overflow-hidden hover:bg-bg-card-hover transition-all duration-500">
                 <div className="px-10 py-6 border-b border-border">
                   <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">
-                    Breakdown
+                    費用明細
                   </span>
                 </div>
 
@@ -70,7 +70,7 @@ export function Investment() {
 
                 <div className="border-t border-border bg-bg-elevated/30">
                   <div className="px-10 py-4 flex items-center justify-between">
-                    <span className="text-[13px] text-text-muted">Subtotal</span>
+                    <span className="text-[13px] text-text-muted">小計</span>
                     <span className="text-[14px] font-mono text-text-secondary tabular-nums">{formatCurrency(q.subtotal)}</span>
                   </div>
                   {q.discount && (
@@ -80,7 +80,7 @@ export function Investment() {
                     </div>
                   )}
                   <div className="px-10 py-6 flex items-center justify-between border-t border-border">
-                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">Total</span>
+                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">總計</span>
                     <span className="text-[28px] font-bold font-mono text-accent tabular-nums tracking-[-0.03em]">
                       <AnimatedCurrency value={q.total} />
                     </span>
@@ -95,7 +95,7 @@ export function Investment() {
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-2xl p-10 h-full flex flex-col hover:bg-bg-card-hover transition-all duration-500">
                 <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase mb-10">
-                  Payment Schedule
+                  付款方式
                 </span>
 
                 <div className="space-y-8 flex-1">
@@ -129,10 +129,10 @@ export function Investment() {
                     whileTap={{ scale: 0.98 }}
                     className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-xl tracking-[-0.01em]"
                   >
-                    Approve & Pay {formatCurrency(q.paymentSchedule[0].amount)}
+                    加入早鳥方案 {formatCurrency(q.paymentSchedule[0].amount)}
                   </motion.a>
                   <p className="text-[10px] text-text-muted/40 text-center mt-4 font-mono tracking-[0.1em]">
-                    SECURE CHECKOUT VIA STRIPE
+                    安全付款
                   </p>
                 </div>
               </div>

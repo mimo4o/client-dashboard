@@ -13,14 +13,14 @@ export function Footer() {
           </span>
         </div>
         <div className="text-[12px] text-text-muted font-mono">
-          Confidential · Prepared {new Date().toLocaleDateString("en-US", {
+          機密文件 · 製作於 {new Date().toLocaleDateString("zh-TW", {
+            year: "numeric",
             month: "long",
             day: "numeric",
-            year: "numeric",
           })}
         </div>
         <div className="text-[12px] text-text-muted">
-          This proposal is valid for 30 days.
+          本提案有效期為 30 天。
         </div>
       </div>
     </footer>

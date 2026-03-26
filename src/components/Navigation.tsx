@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PROJECT } from "@/lib/project-data";
 
 const NAV_ITEMS = [
-  { label: "Overview", href: "#overview" },
-  { label: "Timeline", href: "#timeline" },
-  { label: "Deliverables", href: "#deliverables" },
-  { label: "Scope", href: "#scope" },
-  { label: "Investment", href: "#investment" },
+  { label: "項目概覽", href: "#overview" },
+  { label: "時間線", href: "#timeline" },
+  { label: "交付物", href: "#deliverables" },
+  { label: "服務範圍", href: "#scope" },
+  { label: "投資方案", href: "#investment" },
 ];
 
 export function Navigation() {
@@ -76,7 +76,7 @@ export function Navigation() {
               href="#investment"
               className="hidden md:block text-[11px] font-mono tracking-[0.1em] uppercase text-bg bg-accent px-5 py-2 hover:bg-accent/90 transition-colors"
             >
-              Approve
+              立即加入
             </a>
 
             {/* Mobile hamburger */}

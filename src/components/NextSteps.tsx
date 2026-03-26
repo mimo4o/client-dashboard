@@ -15,7 +15,7 @@ export function NextSteps() {
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="06" label="Next Steps" />
+          <SectionLabel number="06" label="下一步" />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
@@ -101,7 +101,7 @@ export function NextSteps() {
                 {PROJECT.cta.body}
               </h3>
               <p className="text-[14px] text-text-muted mb-6">
-                We&apos;re here to clarify anything about the project.
+                有任何問題，隨時聯繫我們。
               </p>
               <motion.a
                 href={`mailto:${PROJECT.studio.email}`}
@@ -109,7 +109,7 @@ export function NextSteps() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-block bg-bg-elevated border border-border text-text-primary font-medium text-[14px] px-8 py-3 rounded-xl hover:border-accent/30 transition-colors"
               >
-                Get in Touch
+                立即聯繫
               </motion.a>
             </div>
           </TiltCard>

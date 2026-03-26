@@ -51,7 +51,7 @@ export function AnimatedCurrency({
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const motionVal = useMotionValue(0);
   const spring = useSpring(motionVal, { duration: 2000, bounce: 0 });
-  const [display, setDisplay] = useState("£0");
+  const [display, setDisplay] = useState("NT$0");
 
   useEffect(() => {
     if (inView) {
@@ -62,9 +62,9 @@ export function AnimatedCurrency({
   useEffect(() => {
     const unsubscribe = spring.on("change", (latest) => {
       setDisplay(
-        new Intl.NumberFormat("en-GB", {
+        new Intl.NumberFormat("zh-TW", {
           style: "currency",
-          currency: "GBP",
+          currency: "TWD",
           minimumFractionDigits: 0,
           maximumFractionDigits: 0,
         }).format(Math.round(latest))

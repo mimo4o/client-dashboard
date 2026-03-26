@@ -12,14 +12,14 @@ export function Overview() {
     <section id="overview" className="relative py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="01" label="Overview" />
+          <SectionLabel number="01" label="項目概覽" />
         </ScrollReveal>
 
         {/* Image + text split */}
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-32">
           <ScrollReveal delay={0.1} variant="slideRight" className="lg:col-span-5 flex flex-col justify-center">
             <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
-              The Vision
+              我們的願景
             </h2>
             <p className="text-[16px] text-text-secondary leading-[1.8] tracking-[-0.01em]">
               <TextReveal delay={0.3}>
@@ -31,7 +31,7 @@ export function Overview() {
           <div className="lg:col-span-7">
             <ParallaxImage
               src={PROJECT.images.editorial}
-              alt="Nike Air Motion creative direction"
+              alt="品牌創意方向"
               caption="Creative Direction Preview"
               className="aspect-[4/3] rounded-2xl"
             />
@@ -42,7 +42,7 @@ export function Overview() {
         <ScrollReveal delay={0.1}>
           <div className="mb-10">
             <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">
-              Key Objectives
+              核心目標
             </span>
           </div>
         </ScrollReveal>
@@ -57,7 +57,7 @@ export function Overview() {
                   {PROJECT.overview.objectives[0]}
                 </p>
                 <p className="text-[13px] text-text-muted leading-[1.7]">
-                  Crafting a visual universe that feels unmistakably {PROJECT.client.name}, unmistakably new.
+                  打造專屬於{PROJECT.client.name}的品牌系統，從零開始掌控自己的命運。
                 </p>
               </div>
             </TiltCard>
@@ -106,7 +106,7 @@ export function Overview() {
                   <AnimatedCounter value={34} suffix="+" />
                 </div>
                 <div className="text-[13px] text-text-muted leading-[1.6] group-hover:text-text-secondary transition-colors duration-500">
-                  Production-ready assets across every touchpoint
+                  完整交付項目涵蓋所有觸點
                 </div>
               </div>
             </TiltCard>
@@ -114,9 +114,9 @@ export function Overview() {
 
           <div className="md:col-span-7 grid grid-cols-3 gap-5">
             {[
-              { value: 4, suffix: "", label: "Project phases" },
-              { value: 18, suffix: "", label: "Hero visuals" },
-              { value: 15, suffix: "", label: "Social assets" },
+              { value: 4, suffix: "", label: "項目階段" },
+              { value: 18, suffix: "", label: "核心交付" },
+              { value: 15, suffix: "", label: "行銷素材" },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={0.2 + i * 0.1} variant="scaleIn">
                 <TiltCard className="group h-full">

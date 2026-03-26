@@ -26,7 +26,7 @@ export function Hero() {
           <div className="flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-accent" />
             <span className="text-[10px] font-mono tracking-[0.3em] text-text-muted uppercase">
-              Project Proposal
+              項目提案
             </span>
           </div>
           <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">
@@ -69,9 +69,9 @@ export function Hero() {
           {/* Stats row */}
           <div className="flex gap-12">
             {[
-              { label: "Duration", value: PROJECT.project.duration },
-              { label: "Start", value: PROJECT.project.startDate },
-              { label: "Status", value: PROJECT.project.status, accent: true },
+              { label: "時長", value: PROJECT.project.duration },
+              { label: "開始", value: PROJECT.project.startDate },
+              { label: "狀態", value: PROJECT.project.status, accent: true },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-[9px] font-mono tracking-[0.25em] text-text-muted uppercase mb-2">
@@ -96,7 +96,7 @@ export function Hero() {
         className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="text-[9px] font-mono tracking-[0.3em] text-text-muted uppercase">
-          Scroll
+          往下滑
         </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
