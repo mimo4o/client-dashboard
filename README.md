@@ -1,4 +1,4 @@
-# Evo+ 客戶入職儀表板
+# 客戶入職儀表板
 
 高端互動式客戶項目提案儀表板。基於 Next.js、Tailwind CSS v4、Framer Motion 構建。
 
@@ -6,29 +6,44 @@
 
 ## 快速開始
 
-### AI 自動設置（推薦）
-
-用 Claude Code 打開這個項目，Claude 會自動讀取 `PROMPT.md` 並引導你完成設置：
+### 1. 克隆項目
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/evo-client-dashboard.git
-cd evo-client-dashboard
+git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
+cd my-client-dashboard
 ```
 
-然後在 Claude Code 中打開項目，按照問答流程回答 8 個部分的問題即可。
+### 2. 打開 Claude Code，貼上這段 prompt：
 
-### 手動設置
+```
+Clone the client onboarding dashboard template and customize it for my business.
+
+git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
+
+Now walk me through setting it up. Ask me questions one section at a time about:
+1. My studio/brand (name, title, email, accent color, logo)
+2. My client (name, contact person, industry)
+3. The project (name, type, tagline, summary, objectives, duration)
+4. Timeline phases (phase names, dates, tasks)
+5. Deliverables (categories and items with quantities)
+6. Scope (what's included and excluded)
+7. Pricing (line items, discounts, payment schedule, payment link)
+8. Images (suggest Unsplash images based on the client's industry)
+9. Next steps and CTA
+
+After I answer everything, generate a customized src/lib/project-data.ts file with all my answers, and update the accent color in src/app/globals.css. Then tell me how to run it.
+```
+
+Claude 會自動引導你完成 9 個步驟的問答，生成你的專屬儀表板。
+
+### 3. 預覽
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/evo-client-dashboard.git
-cd evo-client-dashboard
 npm install
 npm run dev
 ```
 
 打開 http://localhost:3000
-
-編輯 `src/lib/project-data.ts` 填入你的內容，更新 `src/app/globals.css` 的品牌色。
 
 ## 自定義
 
@@ -60,4 +75,4 @@ npx vercel
 
 ## Credit
 
-Original template by [@bywaviboy](https://instagram.com/bywaviboy), customized by Evo+.
+Original template by [@bywaviboy](https://instagram.com/bywaviboy).
