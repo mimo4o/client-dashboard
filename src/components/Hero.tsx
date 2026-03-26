@@ -26,7 +26,7 @@ export function Hero() {
           <div className="flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-accent" />
             <span className="text-[10px] font-mono tracking-[0.3em] text-text-muted uppercase">
-              項目提案
+              Final Offer
             </span>
           </div>
           <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">

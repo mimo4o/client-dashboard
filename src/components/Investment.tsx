@@ -8,12 +8,12 @@ import { TiltCard } from "./TiltCard";
 import { AnimatedCurrency } from "./AnimatedCounter";
 
 function formatCurrency(amount: number) {
-  return new Intl.NumberFormat("zh-TW", {
-    style: "currency",
-    currency: PROJECT.quote.currency,
+  const formatted = new Intl.NumberFormat("zh-TW", {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   }).format(amount);
+  const prefix = PROJECT.quote.currency === "TWD" ? "NT$" : "USD$";
+  return `${prefix}${formatted}`;
 }
 
 export function Investment() {

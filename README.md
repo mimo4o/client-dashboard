@@ -13,7 +13,7 @@
 ```
 clone this 客戶啟動儀表板模板，並為我的事業進行客製化。
 
-git clone https://github.com/mimo4o/evo-client-dashboard.git my-client-dashboard
+git clone https://github.com/mimo4o/client-dashboard.git my-client-dashboard
 
 現在引導我完成設置。一次問我一個部分：
 1. 我的工作室/品牌（名稱、頭銜、郵箱、品牌色、Logo）
