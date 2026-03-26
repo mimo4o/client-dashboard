@@ -1,7 +1,7 @@
 export const PROJECT = {
   // ─── Brand Color ──────────────────────────────────────────
   // Change this hex AND the matching --color-accent in globals.css
-  accentColor: "#7f161f",
+  accentColor: "#333333",
 
   client: {
     name: "CLIENT_NAME",
@@ -12,9 +12,9 @@ export const PROJECT = {
     industry: "CLIENT_INDUSTRY",
   },
   studio: {
-    name: "Evo+",
-    role: "創辦人",
-    email: "win4xyrus@gmail.com",
+    name: "STUDIO_NAME",
+    role: "STUDIO_ROLE",
+    email: "studio@example.com",
   },
   project: {
     name: "PROJECT_NAME",
@@ -150,7 +150,7 @@ export const PROJECT = {
       { name: "LINE_ITEM_3", description: "DESCRIPTION", price: 0 },
     ],
     subtotal: 0,
-    discount: { label: "早鳥優惠", percentage: 0, amount: 0 },
+    discount: { label: "DISCOUNT_LABEL", percentage: 0, amount: 0 },
     total: 0,
     paymentSchedule: [
       { milestone: "MILESTONE_1", percentage: 100, amount: 0, due: "簽約時支付" },
@@ -168,7 +168,7 @@ export const PROJECT = {
   cta: {
     headline: "CTA_HEADLINE",
     body: "CTA_BODY",
-    email: "win4xyrus@gmail.com",
+    email: "studio@example.com",
   },
   images: {
     hero1: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80",
