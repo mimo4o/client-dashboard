@@ -91,7 +91,7 @@ export function WelcomeModal() {
 
                 {/* CTA */}
                 <a
-                  href="https://evo.example.com"
+                  href="https://www.skool.com/123"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center py-3.5 bg-[#7f161f] text-white text-[12px] font-semibold tracking-[0.1em] uppercase rounded-lg hover:bg-[#9a1b26] transition-colors duration-300"
